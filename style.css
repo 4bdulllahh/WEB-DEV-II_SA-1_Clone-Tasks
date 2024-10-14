@@ -1,7 +1,11 @@
-h1{
-    color: blueviolet;
+@media (max-width:500px){
+    body{
+        color: red;
+    }
 }
 
 header{
-    color: chartreuse;
+    color:red;
 }
+
+
