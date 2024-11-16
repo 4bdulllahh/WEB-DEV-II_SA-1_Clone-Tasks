@@ -1,6 +1,7 @@
 /*Imported google fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Teko:wght@300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Protest+Guerrilla&family=Teko:wght@300..700&display=swap");
+
 /* Body with background color of light blue and font family of "lato" */
 body {
   background-color: #4dccbd;
@@ -22,24 +23,29 @@ header {
   font-family: "Teko", sans-serif;
   box-shadow: 0px 10px 5px #070410;
 }
+
 header .logo {
   padding: 0px;
   font-size: 3em;
 }
+
 header ul {
   display: flex;
   gap: 48px;
   padding: 0%;
   font-size: 1.2em;
 }
+
 header li {
   list-style-type: none;
 }
+
 header a {
   text-decoration: none;
   color: #FFFFFF;
   padding: 0%;
 }
+
 header button {
   font-size: 2em;
   font-family: "Teko", sans-serif;
@@ -49,6 +55,7 @@ header button {
   height: -moz-fit-content;
   height: fit-content;
 }
+
 header button a {
   color: #070410;
   box-sizing: border-box;
@@ -56,21 +63,15 @@ header button a {
   text-decoration: none;
 }
 
-/*Main container sets maximum width to 900px with margin and sets grid layout with two equal
-columns with gap*/
 main {
   max-width: 900px;
   display: grid;
   grid-template-columns: repeat auto-fit, 1fr;
-  /*Created grid layout for desktop using grid-item names*/
-  grid-template-areas: "movie1 movie1" "movie2 movie3" "movie4 movie4" "movie5 movie5" "movie6 movie6";
+  grid-template-areas: "animated animated" "musical biopic" "fantasy fantasy" "romance romance" "adventure adventure";
   margin: 48px auto;
   gap: 16px;
 }
 
-/* Common movie box styling with background color variable "$dark-blue",
-text color variable "$white", font size of variable "font-size: $movie-font-size",
-margin of variable "small-spacing", box shadow and sets display to grid */
 .movie-container {
   background-color: #231651;
   color: #FFFFFF;
@@ -79,10 +80,12 @@ margin of variable "small-spacing", box shadow and sets display to grid */
   box-shadow: 10px 10px 10px #070410;
   display: grid;
 }
+
 .movie-container .movie-poster {
   grid-area: poster;
   display: grid;
 }
+
 .movie-container .movie-desc {
   grid-area: desc;
   box-sizing: border-box;
@@ -90,34 +93,41 @@ margin of variable "small-spacing", box shadow and sets display to grid */
   display: flex;
   gap: 16px;
 }
+
 .movie-container .movie-desc p {
   padding: 0%;
   margin: 0%;
 }
+
 .movie-container button {
   grid-area: button;
 }
+
 .movie-container img {
   height: 400px;
   width: 400px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.movie-container-1 {
-  grid-area: movie1;
+
+.showcase-animated {
+  grid-area: animated;
   grid-template-rows: 1fr 0.6fr;
   grid-template-areas: "poster poster " "desc button";
 }
-.movie-container-1 img {
+
+.showcase-animated img {
   width: 100%;
   height: 250px;
   -o-object-position: 0% 12%;
      object-position: 0% 12%;
 }
-.movie-container-1 p {
+
+.showcase-animated p {
   flex: 1;
 }
-.movie-container-1 button {
+
+.showcase-animated button {
   font-size: 2em;
   font-family: "Teko", sans-serif;
   padding: 0px;
@@ -130,33 +140,39 @@ margin of variable "small-spacing", box shadow and sets display to grid */
   padding: 16px;
   flex: 0.6;
 }
-.movie-container-1 button a {
+
+.showcase-animated button a {
   color: #070410;
   box-sizing: border-box;
   padding: 16px;
   text-decoration: none;
 }
-.movie-container-1 button a {
+
+.showcase-animated button a {
   box-sizing: border-box;
   padding: 0px 70px;
   display: flex;
   line-height: 50px;
   justify-content: center;
 }
-.movie-container-2, .movie-container-3 {
-  grid-area: movie2;
+
+.showcase-musical, .showcase-biopic {
+  grid-area: musical;
   grid-template-rows: 1.25fr 1fr;
   grid-template-areas: "poster" "desc";
 }
-.movie-container-2 .movie-desc, .movie-container-3 .movie-desc {
+
+.showcase-musical .movie-desc, .showcase-biopic .movie-desc {
   flex-direction: column;
   justify-content: space-between;
 }
-.movie-container-2 img, .movie-container-3 img {
+
+.showcase-musical img, .showcase-biopic img {
   width: 100%;
   height: 100%;
 }
-.movie-container-2 button, .movie-container-3 button {
+
+.showcase-musical button, .showcase-biopic button {
   font-size: 2em;
   font-family: "Teko", sans-serif;
   padding: 0px;
@@ -165,24 +181,29 @@ margin of variable "small-spacing", box shadow and sets display to grid */
   height: -moz-fit-content;
   height: fit-content;
 }
-.movie-container-2 button a, .movie-container-3 button a {
+
+.showcase-musical button a, .showcase-biopic button a {
   color: #070410;
   box-sizing: border-box;
   padding: 16px;
   text-decoration: none;
 }
-.movie-container-3 {
-  grid-area: movie3;
+
+.showcase-biopic {
+  grid-area: biopic;
 }
-.movie-container-4, .movie-container-6, .movie-container-5 {
-  grid-area: movie4;
+
+.showcase-fantasy, .showcase-adventure, .showcase-romance {
+  grid-area: fantasy;
   grid-template-areas: "poster desc";
 }
-.movie-container-4 .movie-desc, .movie-container-6 .movie-desc, .movie-container-5 .movie-desc {
+
+.showcase-fantasy .movie-desc, .showcase-adventure .movie-desc, .showcase-romance .movie-desc {
   flex-direction: column;
   justify-content: space-between;
 }
-.movie-container-4 button, .movie-container-6 button, .movie-container-5 button {
+
+.showcase-fantasy button, .showcase-adventure button, .showcase-romance button {
   font-size: 2em;
   font-family: "Teko", sans-serif;
   padding: 0px;
@@ -191,49 +212,55 @@ margin of variable "small-spacing", box shadow and sets display to grid */
   height: -moz-fit-content;
   height: fit-content;
 }
-.movie-container-4 button a, .movie-container-6 button a, .movie-container-5 button a {
+
+.showcase-fantasy button a, .showcase-adventure button a, .showcase-romance button a {
   color: #070410;
   box-sizing: border-box;
   padding: 16px;
   text-decoration: none;
 }
-.movie-container-5 {
-  grid-area: movie5;
+
+.showcase-romance {
+  grid-area: romance;
 }
-.movie-container-6 {
-  grid-area: movie6;
+
+.showcase-adventure {
+  grid-area: adventure;
 }
 
 /* Media queries for screen width of 1023px px or lesser */
 @media screen and (max-width: 1023px) {
-  /* Changed spacing between the links in header for tablet screen*/
   header ul {
     gap: 32px;
   }
-  /* Adjusted margins for main-container and centered horizonally */
+
   main {
     margin: 32px 32px;
     justify-self: center;
-    grid-template-areas: "movie1 movie2" "movie3 movie4" "movie5 movie6";
+    grid-template-areas: "animated musical" "biopic fantasy" "romance adventure";
   }
-  /* Common movie box styling for tablet screen */
+
   .movie-container {
     grid-auto-columns: minmax(100px, 1fr);
   }
+
   .movie-container .movie-desc {
     flex-direction: column;
     justify-content: space-between;
   }
+
   .movie-container img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
+
   .movie-container button {
     box-sizing: border-box;
     padding: 16px;
   }
+
   .movie-container button a {
     box-sizing: border-box;
     padding: 0px 101px;
@@ -241,52 +268,60 @@ margin of variable "small-spacing", box shadow and sets display to grid */
     line-height: 50px;
     justify-content: center;
   }
-  .movie-container-1 {
+
+  .showcase-animated {
     grid-template-areas: "poster" "desc";
     grid-template-rows: 0.5fr 1fr;
   }
-  .movie-container-1 p, .movie-container-1 button {
+
+  .showcase-animated p, .showcase-animated button {
     flex: 0;
   }
-  .movie-container-2, .movie-container-3 {
+
+  .showcase-musical, .showcase-biopic {
     grid-template-rows: 0.5fr 1fr;
   }
-  .movie-container-4, .movie-container-5, .movie-container-6 {
+
+  .showcase-fantasy, .showcase-romance, .showcase-adventure {
     grid-template-areas: "poster" "desc";
     grid-template-rows: 0.5fr 1fr;
   }
 }
+
 /* Media queries for screen width of 719px px or lesser */
 @media screen and (max-width: 719px) {
-  /* Adjusted the header margin and removes the box shadow in header */
   header {
     margin-bottom: 16px;
     box-shadow: 0px 0px 0px;
   }
+
   header .logo {
     font-size: 2em;
   }
+
   header nav {
     display: none;
   }
-  /* Main container sets width to 100% and removes spacing from main container */
+
   main {
     max-width: 100%;
     margin: 0px;
     gap: 0px;
-    grid-template-areas: "movie1" "movie2" "movie3" "movie4" "movie5" "movie6";
+    grid-template-areas: "animated" "musical" "biopic" "fantasy" "romance" "adventure";
   }
-  /* Common movie box styling for tablet screen */
+
   .movie-container {
     margin: 0px;
     margin-bottom: 16px;
     box-shadow: 0px 0px 0px;
     grid-template-rows: auto;
   }
+
   .movie-container .movie-desc {
     justify-content: unset;
   }
+
   .movie-container button a {
     padding: 0px;
   }
-}/*# sourceMappingURL=index.css.map */
+}
