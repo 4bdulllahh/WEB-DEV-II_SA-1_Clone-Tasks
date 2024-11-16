@@ -2,23 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Teko:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Protest+Guerrilla&family=Teko:wght@300..700&display=swap');
 
-// Colors
-$pageBackground: #4dccbd;    // Previously $light-blue
-$contentBackground: #231651; // Previously $dark-blue
-$textLight: #FFFFFF;        // Previously $white
-$textDark: #070410;         // Previously $black
+// Let's set up our color story! 
+$pageBackground: #4dccbd;    // A refreshing turquoise that gives our site a cool, modern vibe
+$contentBackground: #231651; // This deep purple adds drama and makes our content pop
+$textLight: #FFFFFF;        // Clean, crisp white - perfect for readability
+$textDark: #070410;         // Nearly black for maximum contrast and impact
 
-// Spacing
-$spacingNormal: 16px;       // Previously $small-spacing
-$spacingWide: 48px;         // Previously $large-spacing
+// Spacing is like the rhythm of our design...
+$spacingNormal: 16px;       // Our go-to spacing - cozy but not cramped
+$spacingWide: 48px;         // When elements need room to breathe
 
-// Typography
-$titleSize: 3em;            // Previously $header-font-size
-$actionSize: 2em;           // Previously $button-font-size
-$bodySize: 1.5em;           // Previously $movie-font-size
-$headingFont: "Teko", sans-serif;    // Previously $teko-font
-$bodyFont: "Lato", sans-serif;       // Previously $lato-font
+// Typography that tells our story
+$titleSize: 3em;            // Big and bold - these titles need to grab attention!
+$actionSize: 2em;           // Just right for buttons that beg to be clicked
+$bodySize: 1.5em;           // The sweet spot for readable movie descriptions
+$headingFont: "Teko", sans-serif;    // Our star player for headlines - modern and bold
+$bodyFont: "Lato", sans-serif;       // The reliable sidekick for body text - super readable
 
-// Effects
-$navShadow: 0px 10px 5px #070410;    // Previously $header-shadow
-$cardShadow: 10px 10px 10px #070410; // Previously $container-shadow
+// Adding some depth with shadows
+$navShadow: 0px 10px 5px #070410;    // Subtle depth to make our nav float
+$cardShadow: 10px 10px 10px #070410; // Makes our movie cards pop off the page
